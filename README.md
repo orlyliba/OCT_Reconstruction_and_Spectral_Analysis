@@ -1,4 +1,4 @@
-# OCT_Reconstruction_and_Spectral_Analysis
+# OCT Reconstruction and Spectral Analysis
 A MATLAB code for reconstruction and spectral analysis of spectral domain OCT images. 
 This code can be used as part of a platform for molecular imaging with OCT, which we call MOZART.
 
@@ -20,8 +20,8 @@ Example of image created with this code and analysis:
   <b>(Contract enhanced OCT image of a mouse pinna, after squential injections of two types of large gold nanorods)</b>
 </p>
 
-This code was used to create analysis and images for: "Contrast-enhanced optical coherence tomography with picomolar sensitivity for functional in vivo imaging"
-O Liba, ED SoRelle, D Sen, A de La Zerda - Scientific reports, 2016.
+This code was used to create analysis and images for: "Contrast-enhanced optical coherence tomography with picomolar sensitivity for functional in vivo imaging" O Liba, ED SoRelle, D Sen, A de La Zerda - Scientific reports, 2016. 
+<br>
 Please cite our paper if you use our code.
 
 I would like to acknowledge the Thorlabs team in Lubeck, Germany, for their support in working with the OCT systems and reconstructing the raw signals.
