@@ -12,11 +12,7 @@ In addition to reconstructing the images this code:
 - Creates images that combine the OCT image, spectral analysis and speckle variance.
 - and more features...
 
-This code was used to create analysis and images for: "Contrast-enhanced optical coherence tomography with picomolar sensitivity for functional in vivo imaging"
-O Liba, ED SoRelle, D Sen, A de La Zerda - Scientific reports, 2016.
-Please cite our paper if you use our code.
-
-I would like to acknowledge the Thorlabs team in Lubeck, Germany, for their support in working with the OCT systems and reconstructing the raw signals.
+Example of image created with this code and analysis:
 
 <p align="center">    
   <img src="https://cloud.githubusercontent.com/assets/19598320/19124011/2866bae4-8ae6-11e6-8de7-f9ffbae46de7.png">
@@ -24,6 +20,13 @@ I would like to acknowledge the Thorlabs team in Lubeck, Germany, for their supp
   <b>(Contract enhanced OCT image of a mouse pinna, after squential injections of two types of large gold nanorods)</b>
 </p>
 
+This code was used to create analysis and images for: "Contrast-enhanced optical coherence tomography with picomolar sensitivity for functional in vivo imaging"
+O Liba, ED SoRelle, D Sen, A de La Zerda - Scientific reports, 2016.
+Please cite our paper if you use our code.
+
+I would like to acknowledge the Thorlabs team in Lubeck, Germany, for their support in working with the OCT systems and reconstructing the raw signals.
+
+----------------------------------------------------------------------------------------------------------------------------------------
 Usage of the code:
 
 0. If you use Thorlabs spectral domain OCTs, export your data as raw interferogram.
