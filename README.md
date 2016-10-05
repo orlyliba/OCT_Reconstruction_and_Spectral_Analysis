@@ -37,5 +37,5 @@ This allows stitching of multiple files into one volume, and also choosing the t
 You can also change the colormap using the display functions.
 If you saves a 2D .mat buffer, you can also play with the display parameters using createPngBscanFunction.m
 
-![]()
-
+![](https://cloud.githubusercontent.com/assets/19598320/19124011/2866bae4-8ae6-11e6-8de7-f9ffbae46de7.png)
+(Contract enhanced OCT image of a mouse pinna, after squential injections of two types of large gold nanorods)
