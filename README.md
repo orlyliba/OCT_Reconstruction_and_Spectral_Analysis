@@ -16,9 +16,14 @@ This code was used to create analysis and images for: "Contrast-enhanced optical
 O Liba, ED SoRelle, D Sen, A de La Zerda - Scientific reports, 2016.
 Please cite our paper if you use our code.
 
-I would like to acknowledge the support of Thorlabs' team in Lubeck, Germany, for their support in working with the OCT systems and reconstructing the raw signals.
+I would like to acknowledge the Thorlabs team in Lubeck, Germany, for their support in working with the OCT systems and reconstructing the raw signals.
 
-----------------------------------------------------------------------------------------------------------------------------
+<p align="center">    
+  <img src="https://cloud.githubusercontent.com/assets/19598320/19124011/2866bae4-8ae6-11e6-8de7-f9ffbae46de7.png">
+  <br>
+  <b>(Contract enhanced OCT image of a mouse pinna, after squential injections of two types of large gold nanorods)</b>
+</p>
+
 Usage of the code:
 
 0. If you use Thorlabs spectral domain OCTs, export your data as raw interferogram.
@@ -36,7 +41,3 @@ If you ran 3D volumes, use spectralParamsV3_3D. It will save your results as a .
 This allows stitching of multiple files into one volume, and also choosing the type of output (OCT log signal, spectral signal, speckle variance...).
 You can also change the colormap using the display functions.
 If you saves a 2D .mat buffer, you can also play with the display parameters using createPngBscanFunction.m
-
-![](https://cloud.githubusercontent.com/assets/19598320/19124011/2866bae4-8ae6-11e6-8de7-f9ffbae46de7.png)
-
-(Contract enhanced OCT image of a mouse pinna, after squential injections of two types of large gold nanorods)
