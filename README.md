@@ -34,7 +34,7 @@ This code supports all of ThorLabs SD-OCT systems, but was written specifically 
 In any case you'll need to update the chirp.mat files from the Chirp.dat file that is stored in your OCT system (The Chirp.dat is calibrated for each individual system), and perhaps other parameters, such as size of buffer (1024 or 2048).
 If you use an OCT from a different manufacturer, you'll need to update the functions that read the raw data.
 
-1. Update the parameter files according to your system and the type of scans you acquired.
+1. Update the parameter files according to your system and the type of scans you acquired. You'll also need to update paths to  your data and the chirp file
 The parameter file should be readable enough. Feel free to contact me if you have any questions.
 If you ran 3D volumes, use spectralParamsV3_3D. It will save your results as a .mat buffer file, and not png images.
 
