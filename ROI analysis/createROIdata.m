@@ -1,8 +1,8 @@
 % Code for collecting data from ROIs in Bscans
 clear; close all; clc
 %%
-pathName = 'C:\MATLAB_Share\Orly\2015\15-03-10 isotype for statistics\Isotype 1-7-15 ext 1p5\spectral\injection sensitivity\';
-outputPathName = 'C:\MATLAB_Share\Orly\2015\15-03-10 isotype for statistics\Isotype 1-7-15 ext 1p5\spectral\injection sensitivity results\';
+pathName = '\';
+outputPathName = '\';
 suffix = '_vessel4';
 selectionShape = 'ellips';% ellips, rectangle, polygon
 %%
