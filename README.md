@@ -2,7 +2,7 @@
 MATLAB code for reconstruction and spectral analysis of spectral domain OCT images. 
 This code can be used as part of a platform for molecular imaging with OCT, which we call MOZART.
 
-This code was created to read raw interferograms from Thorlabs OCTs (SW version 4 works best, but version 3 is also supported).
+This code was created to read raw interferograms from Thorlabs OCTs (SW version 4 works best, but version 3 is also supported with a few changes).
 It reconstructs the raw interferograms into OCT images, and supports both 2D and 3D.
 In addition to reconstructing the images this code:
 - Calculates the normalized spcekle variance (useful for detecting blood vessels)
@@ -30,9 +30,9 @@ I would like to acknowledge the Thorlabs team in Lubeck, Germany, for their supp
 Usage of the code:
 
 0. If you use Thorlabs spectral domain OCTs, export your data as raw interferogram.
-This code supports Ganymede HR and Telesto.
-If you use a different system you'll need to update the chirp file, and perhaps other parameters, such as size of buffer.
-If you use an OCT from a different manufacturer, you'll also need to update the functions that read the raw data.
+This code supports all of ThorLabs SD-OCT systems, but was written specifically for Ganymede HR and Telesto. 
+In any case you'll need to update the chirp.mat files from the Chirp.dat file that is stored in your OCT system (The Chirp.dat is calibrated for each individual system), and perhaps other parameters, such as size of buffer (1024 or 2048).
+If you use an OCT from a different manufacturer, you'll need to update the functions that read the raw data.
 
 1. Update the parameter files according to your system and the type of scans you acquired.
 The parameter file should be readable enough. Feel free to contact me if you have any questions.
