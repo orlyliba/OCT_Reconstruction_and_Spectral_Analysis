@@ -6,8 +6,8 @@ version = 'V4'; % 'sdr'
 scanMode = 'Bscan'; %'speckVar'; % 'Bscan', '3D'
 
 %% I/O parameters
-inputFolder = 'F:\RawData\Ganymede\Derek\8-31-16 tumor imaging with GNR injection\2D OCT\to run\';
-outputFolder = '160831 2D OCT\';
+inputFolder = '\';
+outputFolder = '\';
 balanceFuncName = 'balance.mat';
 balanceFuncPath = [];
 saveBuffers = 1; % needed for creating 3D and analyzing 2D
@@ -106,17 +106,17 @@ maxSpeckVar = 1.0;
 %%                             CODE                                               %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Add paths
-addpath('C:\MATLAB_Share\Matlab files for all\');
-addpath('C:\MATLAB_Share\Matlab files for all\xml_io_tools\');
+addpath('\');
+addpath('\xml_io_tools\');
 addpath([pwd '/functions/']);
 %% Load version specific stuff
 if strcmp(OCTSystem,'Ganymede')
     load FFTM_Ganymede
-    load('C:\MATLAB_Share\Matlab files for all\Chirp_Ganymede.mat')
+    load('\Chirp_Ganymede.mat')
     filt = [];
 elseif strcmp(OCTSystem,'Telesto')
     load FFTM_Telesto
-    load('C:\MATLAB_Share\Matlab files for all\Chirp_Telesto.mat')
+    load('\Chirp_Telesto.mat')
     filt = hann(length(chirp_vect));
 else
     error('ERROR: Wrong OCTSystem name! (spectralParams)')
