@@ -47,10 +47,7 @@ for fileInd = fileStartInd:1:length(filesToRun)
         if ~balanceAsFirst,
             balanceFunc.func = []; %balanceFunc.ROI = [];
         end
-%         [~,~, bandBuff] =...
-%             spectralAnalysis4STFT(kVect, apodization, interf, ascanAve, dispComp, spectParams, balanceEnable, balanceFunc, size(interf,3), saveAlgoDataPath);
-%         bandBuff = bandBuff(viewRange,:,:);
-        
+       
         if savePng, saveAllFigs(h,[outputFolderResults datestr(datenum(timeStamp),30) '_' scanName '_spectralSaves' '_' num2str(frameInd) '_']); end
         
         if strcmp(OCTSystem,'Telesto')
