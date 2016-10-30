@@ -112,11 +112,9 @@ addpath(pwd '\xml_io_tools\');
 addpath([pwd '/functions/']);
 %% Load version specific stuff
 if strcmp(OCTSystem,'Ganymede')
-    load FFTM_Ganymede
     load('Chirp_Ganymede.mat')
     filt = [];
 elseif strcmp(OCTSystem,'Telesto')
-    load FFTM_Telesto
     load('Chirp_Telesto.mat')
     filt = hann(length(chirp_vect));
 else
