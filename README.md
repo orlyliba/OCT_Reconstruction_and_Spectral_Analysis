@@ -3,7 +3,7 @@ MATLAB code for reconstruction and spectral analysis of spectral domain OCT imag
 This code can be used as part of a platform for molecular imaging with OCT, which we call MOZART.
 
 This code was created to read raw interferograms from Thorlabs OCTs (SW version 4 works best, but version 3 is also supported with a few changes).
-It reconstructs the raw interferograms into OCT images, and supports both 2D and 3D.
+It reconstructs the raw interferograms into OCT images, and supports both 2D, 3D and speckle variance.
 In addition to reconstructing the images this code:
 - Calculates the normalized spcekle variance (useful for detecting blood vessels)
 - Calculates dispersion compensation
