@@ -36,11 +36,13 @@ If you use an OCT from a different manufacturer, you'll need to update the funct
 
 1. Update the parameter files according to your system and the type of scans you acquired. You'll also need to update paths to  your data and the chirp file
 The parameter file should be readable enough. Feel free to contact me if you have any questions.
-If you ran 3D volumes, use spectralParamsV3_3D. It will save your results as a .mat buffer file, and not png images.
+To only run reconstruction (without spectral analysis, but with dispersion compensation), use reconstructParams.
+To run 2D frames, use spectralParamsV3_2D. It will save your results as png images and/or .mat buffer file.
+To run 3D volumes, use spectralParamsV3_3D. It will save your results as a .mat buffer file, and not png images.
 
-2. run the file called runSpectralV3.m
+2. run the file called runSpectralV3.m  (or runReconstruct.m, for OCT reconstruction only, without spectral analysis)
 
-3. If you have a 3D volume, you'll now need to create it into a Tiff file. To do this, run one of the createTiff functions in the display_functions folder.
+3. If you have a 3D volume, you'll now need to format the results into Tiff files. To do this, run one of the createTiff functions in the display_functions folder.
 This allows stitching of multiple files into one volume, and also choosing the type of output (OCT log signal, spectral signal, speckle variance...).
 You can also change the colormap using the display functions.
 If you saves a 2D .mat buffer, you can also play with the display parameters using createPngBscanFunction.m
