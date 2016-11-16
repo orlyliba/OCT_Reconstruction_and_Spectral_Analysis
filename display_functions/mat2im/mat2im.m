@@ -74,8 +74,8 @@ if nargin==3
     if isnan(maxVal), maxVal=max(mat(:)); end
     mat(mat>maxVal)=maxVal;        
 else
-minVal=min(mat(:));
-maxVal=max(mat(:));
+    minVal=0;%min(mat(:));
+    maxVal=255;%max(mat(:));
 end
 
 
