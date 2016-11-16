@@ -13,6 +13,8 @@ if params.view
 end
 
 [band1spatial,band2spatial,balanceFunc, h] = balanceBands(balanceEnable,band1spatial,band2spatial,balanceFunc);
+band1spatial(band1spatial<0) = 0;
+band2spatial(band2spatial<0) = 0;
 
 [diffImg, compoundImg] = deal(zeros(FFTLength/2,nAscans/ascanAve,floor(nFrames/frames2Avg)));
 for ind = 1:floor(nFrames/frames2Avg)
